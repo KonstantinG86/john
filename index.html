@@ -9,20 +9,32 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li><a href="works.html" class="header-links">Works</a></li>
-                <li><a href="blog.html" class="header-links">Blog</a></li>
-                <li><a href="contact.html" class="header-links">Contacts</a></li>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="works.html" class="header__link header__link--active">Works</a></li>
+                <li><a href="blog.html" class="header__link">Blog</a></li>
+                <li><a href="contact.html" class="header__link">Contacts</a></li>
             </ul>
         </nav>
     </header>
-    <h1>John</h1>
     <main>
-        <h1>Hi, I am John, Creative Technologist</h1>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <img src="img/Ellipse1.png">
-        <a href="works.html"><img src="img/download_resume.png"></a>
+        <section class="first">
+            <div class="first__container">
+                <div class="first_description">
+                    <h1 class="first__title">
+                        Hi, I am John, Creative&nbsp;Technologist
+                    </h1>
+                    <p class="first__text">
+                        Amet minim mollit non deserunt 
+                        ullamco est sit aliqua dolor do amet sint.
+                         Velit officia consequat duis enim velit mollit. 
+                         Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <a href="img/photo.jpg" class="button first__button" download="">Download resume</a>
+                </div>
+                <img src="img/photo.jpg" class="first__image" alt="Photo of John">
+            </div>
+        </section>
     </main>
 </body>
 </html>
