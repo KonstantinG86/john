@@ -71,6 +71,17 @@ body {
     padding: 28px 60px;
 }
 
+.header__nav {
+    display: flex;
+    justify-content: end;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
 .header__link {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -82,23 +93,13 @@ body {
     color: #FF6464;
 }
 
-.header__list {
-    list-style: none;
-    display: flex;
-    gap: 32px;
-}
-
-.header__nav {
-    display: flex;
-    justify-content: end;
-}
-
 /* header */
 
 /* first */
 
 .first {
-    padding: 230px 0 170px 0;
+    padding-top: 127px;
+    padding-bottom: 68px;
 }
 
 .first__container {
