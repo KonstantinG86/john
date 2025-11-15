@@ -93,7 +93,23 @@ body {
     color: #FF6464;
 }
 
-/* header */
+@media screen and (max-width: 576px) {
+    .header {
+        justify-content: center;
+        padding: 14px 30px;
+   } 
+   .header__nav {
+        justify-content: center;
+   } 
+   .header__list {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+   }
+}
+
+
+
 
 /* first */
 
@@ -103,25 +119,20 @@ body {
 }
 
 .first__container {
+    width: calc(100% - 60px * 2);
     max-width: 856px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
 }
-
-/* margin расчет автоматический 
-0 это верх и низ, 
-авто это края */
-
 
 .first__description{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
     align-items: start;
     max-width: 600px;
-
 }
 
 .first__title {
@@ -145,7 +156,72 @@ body {
     box-shadow: -5px 13px 0 #EDF7FA;
 }
 
-/* first */
+@media screen and (max-width: 840px) {
+    .first {
+        padding-top: 60px;
+        padding-bottom: 34px;
+    }
+    .first__container {
+        width: calc(100% - 30px * 2);
+        gap: 20px;
+    }
+    .first__description {
+        gap: 20px;
+        max-width: 100%;
+    }
+    .first__title {
+        font-size: 36px;
+    }
+    .first__image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .first {
+        padding-top: 40px;
+        padding-bottom: 28px;
+    }
+    .first__title {
+        font-size: 28px;
+    }
+    .first__text {
+        font-size: 14px;
+    }
+    .first__image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .first {
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+    .first__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: calc(100% - 10px * 2);
+        gap: 20px;
+    }
+    .first__description {
+        align-items: center;
+    }
+    .first__title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .first__text {
+        font-size: 12px;
+        text-align: center;
+    }
+    .first__image {
+        width: 150px;
+        height: 150px;
+    }
+}
 
 /* button */
 
@@ -159,5 +235,3 @@ body {
     font-size: 20px;
     border-radius: 2px;
 }
-
-/* button */
